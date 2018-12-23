@@ -1,0 +1,14 @@
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\bin\Debug\excel-l2t.dll
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\bin\Debug\excel-l2t.pdb
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\bin\Debug\excel-l2t.dll.manifest
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\bin\Debug\excel-l2t.vsto
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.frmDelimiter.resources
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.Properties.Resources.resources
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.rbnThisAddin.resources
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.GenerateResource.cache
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.CoreCompileInputs.cache
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.CopyComplete
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.dll
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.pdb
+D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csprojAssemblyReference.cache

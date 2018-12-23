@@ -1,0 +1,14 @@
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\bin\Debug\excel-load-to-text.dll
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\bin\Debug\excel-load-to-text.pdb
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\bin\Debug\excel-load-to-text.dll.manifest
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\bin\Debug\excel-load-to-text.vsto
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel_load_to_text.Properties.Resources.resources
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel_load_to_text.rbnThisAddin.resources
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.csproj.GenerateResource.cache
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.csproj.CoreCompileInputs.cache
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.csproj.CopyComplete
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.dll
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.pdb
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel-load-to-text.csprojAssemblyReference.cache
+C:\Users\vlakatos\Source\Repos\excel-load-to-text\excel-load-to-text\obj\Debug\excel_load_to_text.frmDelimiter.resources
