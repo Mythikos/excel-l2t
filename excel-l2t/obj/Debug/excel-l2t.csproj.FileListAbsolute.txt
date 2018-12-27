@@ -12,3 +12,17 @@ D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.CopyComple
 D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.dll
 D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.pdb
 D:\Users\pntbl\Desktop\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csprojAssemblyReference.cache
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\excel-l2t.dll
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\excel-l2t.pdb
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\excel-l2t.dll.manifest
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\excel-l2t.vsto
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.frmDelimiter.resources
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.Properties.Resources.resources
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel_load_to_text.rbnThisAddin.resources
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.GenerateResource.cache
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.CoreCompileInputs.cache
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel-l2t.csproj.CopyComplete
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel-l2t.dll
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\obj\Debug\excel-l2t.pdb
+C:\Users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t\bin\Debug\Microsoft.VisualStudio.Tools.Applications.Runtime.dll

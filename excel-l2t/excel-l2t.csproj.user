@@ -2,5 +2,13 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectView>ProjectFiles</ProjectView>
+    <PublishUrlHistory>
+    </PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Project</StartAction>
+    <StartProgram>C:\Program Files\Microsoft Office\Office15\EXCEL.EXE</StartProgram>
   </PropertyGroup>
 </Project>

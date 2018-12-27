@@ -36,31 +36,32 @@
         {
             this.tabLoadToText = this.Factory.CreateRibbonTab();
             this.grpActions = this.Factory.CreateRibbonGroup();
-            this.btnLoadFromText = this.Factory.CreateRibbonButton();
+            this.btnLoadDelimitedFile = this.Factory.CreateRibbonButton();
             this.tabLoadToText.SuspendLayout();
             this.grpActions.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabLoadToText
             // 
+            this.tabLoadToText.ControlId.ControlIdType = Microsoft.Office.Tools.Ribbon.RibbonControlIdType.Office;
             this.tabLoadToText.Groups.Add(this.grpActions);
-            this.tabLoadToText.Label = "L2T";
+            this.tabLoadToText.Label = "TabAddIns";
             this.tabLoadToText.Name = "tabLoadToText";
             // 
             // grpActions
             // 
-            this.grpActions.Items.Add(this.btnLoadFromText);
-            this.grpActions.Label = "Actions";
+            this.grpActions.Items.Add(this.btnLoadDelimitedFile);
+            this.grpActions.Label = "Excel L2T";
             this.grpActions.Name = "grpActions";
             // 
-            // btnLoadFromText
+            // btnLoadDelimitedFile
             // 
-            this.btnLoadFromText.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.btnLoadFromText.Image = global::excel_load_to_text.Properties.Resources.ic_text_document;
-            this.btnLoadFromText.Label = "From Text";
-            this.btnLoadFromText.Name = "btnLoadFromText";
-            this.btnLoadFromText.ShowImage = true;
-            this.btnLoadFromText.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnLoadFromText_Click);
+            this.btnLoadDelimitedFile.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnLoadDelimitedFile.Image = global::excel_load_to_text.Properties.Resources.ic_text_document;
+            this.btnLoadDelimitedFile.Label = "Load Delimited File";
+            this.btnLoadDelimitedFile.Name = "btnLoadDelimitedFile";
+            this.btnLoadDelimitedFile.ShowImage = true;
+            this.btnLoadDelimitedFile.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnLoadDelimitedFile_Click);
             // 
             // rbnThisAddin
             // 
@@ -79,7 +80,7 @@
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab tabLoadToText;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup grpActions;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnLoadFromText;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnLoadDelimitedFile;
     }
 
     partial class ThisRibbonCollection

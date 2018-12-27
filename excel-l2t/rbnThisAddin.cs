@@ -16,7 +16,7 @@ namespace excel_load_to_text
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-        private void btnLoadFromText_Click(object sender, RibbonControlEventArgs e)
+        private void btnLoadDelimitedFile_Click(object sender, RibbonControlEventArgs e)
         {
             DelimiterItem delimiterItem;
             int columnCount = 0;
@@ -24,15 +24,22 @@ namespace excel_load_to_text
             DialogResult dialogResult;
             Tuple<bool, string> importResult = new Tuple<bool, string>(false, string.Empty);
 
+            //
+            // Open a file dialog
             fileDialog = new OpenFileDialog();
             fileDialog.Filter = "Text (*.pip,*.prn,*.txt,*.csv)|*.pip;*.prn;*.txt;*.csv|All Files (*.*)|*.*";
             fileDialog.Multiselect = false;
-
             dialogResult = fileDialog.ShowDialog();
+
+            //
+            // Was the result ok?
             if (dialogResult == DialogResult.OK)
             {
+                //
+                // Does the file exist?
                 if (fileDialog.CheckFileExists)
                 {
+                    //
                     // Get the file delimiter
                     delimiterItem = GetDelimiter();
                     if (delimiterItem == default(DelimiterItem))
@@ -41,21 +48,22 @@ namespace excel_load_to_text
                         return;
                     }
 
+                    //
                     // Get the column count
                     columnCount = GetColumnCount(fileDialog.FileName, delimiterItem);
                     if (columnCount == 0)
                     {
-                        MessageBox.Show($"Using the delimiter we were unable to identify any columns.", Constants.Application.Name + " " + Constants.Application.Version, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show($"Using the delimiter provided, we were unable to identify any columns.", Constants.Application.Name + " " + Constants.Application.Version, MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
+                    //
                     // Import the file!
                     importResult = OpenDelimitedFileAsText(fileDialog.FileName, delimiterItem, columnCount);
+                    if (importResult.Item1 == false)
+                        MessageBox.Show($"File failed to load. The following error was captured: {importResult.Item2}", Constants.Application.Name + " " + Constants.Application.Version, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
-            if (importResult.Item1 == false)
-                MessageBox.Show($"File failed to load with the following error message: {importResult.Item2}", Constants.Application.Name + " " + Constants.Application.Version, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         /// <summary>
@@ -68,13 +76,17 @@ namespace excel_load_to_text
 
             try
             {
+                //
+                // Open the delimiter info form
                 frmDelimiter delimiterForm = new frmDelimiter();
 				delimiterForm.StartPosition = FormStartPosition.CenterParent;
                 delimiterForm.ShowDialog();
+
+                //
+                // Capture delimiter result
                 result = delimiterForm.DelimiterItem;
             }
             catch { }
-            finally { }
 
             return result;
         }
@@ -95,20 +107,28 @@ namespace excel_load_to_text
 
             try
             {
+                //
+                // Get the file info
                 file = new FileInfo(filePath);
                 if (file.Exists)
                 {
+                    //
+                    // Do we have a delimiter?
                     if (!string.IsNullOrEmpty(delimiterItem.GetDelimitingCharacter()))
                     {
+                        //
+                        // Load all lines
                         allLines = File.ReadAllLines(filePath);
                         foreach (string line in allLines)
                         {
+                            //
                             // Split the line at the delimiter
                             splitLine = line.Split(char.Parse(delimiterItem.GetDelimitingCharacter()));
                             if (result < splitLine.Count())
                                 result = splitLine.Count();
 
-                            // If we have analyzed 30% of the file, break out, only if the file is large though
+                            //
+                            // If the file > 10000 lines and we have analyzed 30% of the file, break out
                             if (allLines.Count() > 10000 && (count++ / 100) >= 0.30)
                                 break;
                         }
@@ -183,14 +203,17 @@ namespace excel_load_to_text
                 }
                 else
                 {
+                    //
+                    // Set failure
                     result = Tuple.Create(false, "File could not be found.");
                 }
             }
             catch (Exception ex)
             {
+                //
+                // Set failure
                 result = Tuple.Create(false, ex.Message);
             }
-            finally { }
 
             return result;
         }
