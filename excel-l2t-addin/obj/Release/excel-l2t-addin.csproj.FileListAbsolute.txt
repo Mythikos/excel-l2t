@@ -1,0 +1,14 @@
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\excel-l2t.dll
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\excel-l2t.pdb
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\excel-l2t.dll.manifest
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\excel-l2t.vsto
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel_load_to_text.frmDelimiter.resources
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel_load_to_text.Properties.Resources.resources
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel_load_to_text.rbnThisAddin.resources
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel-l2t-addin.csproj.GenerateResource.cache
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel-l2t-addin.csproj.CoreCompileInputs.cache
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel-l2t-addin.csproj.CopyComplete
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel-l2t.dll
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-addin\obj\Release\excel-l2t.pdb

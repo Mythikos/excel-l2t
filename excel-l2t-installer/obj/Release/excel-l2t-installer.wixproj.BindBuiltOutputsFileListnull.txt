@@ -1,0 +1,2 @@
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-installer\bin\Release\ExcelL2TInstaller.msi
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-installer\bin\Release\ExcelL2TInstaller.wixpdb

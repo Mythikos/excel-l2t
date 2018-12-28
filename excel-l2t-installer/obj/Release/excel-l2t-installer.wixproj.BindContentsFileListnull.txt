@@ -1,0 +1,5 @@
+..\excel-l2t-addin\bin\Release\excel-l2t.dll
+..\excel-l2t-addin\bin\Release\excel-l2t.dll.manifest
+..\excel-l2t-addin\bin\Release\excel-l2t.vsto
+..\excel-l2t-addin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+..\excel-l2t-addin\bin\Release\Microsoft.VisualStudio.Tools.Applications.Runtime.dll

@@ -1,0 +1,8 @@
+obj\Release\Product.wixobj
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-msi\bin\Release\ExcelL2TInstaller.wixpdb
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-msi\bin\Release\ExcelL2TInstaller.msi
+obj\Release\excel-l2t-installer.wixproj.BindContentsFileListnull.txt
+obj\Release\excel-l2t-installer.wixproj.BindOutputsFileListnull.txt
+obj\Release\excel-l2t-installer.wixproj.BindBuiltOutputsFileListnull.txt
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-installer\bin\Release\ExcelL2TInstaller.msi
+\\main03svr\users\vlakatos\Documents\GitHub\excel-l2t\excel-l2t-installer\bin\Release\ExcelL2TInstaller.wixpdb

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" 
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="*" Name="Excel L2T" Language="1033" Version="1.0.0.0" Manufacturer="Vincent Lakatos" UpgradeCode="85e0a59c-edf7-4655-bfb6-e96ef14d2764">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+
+    <Property Id="VSTORUNTIMEREDIST">
+      <RegistrySearch Id="VSTORuntimeRedist" Root="HKLM" Key="SOFTWARE\Microsoft\VSTO Runtime Setup\v4R" Name="Version" Type="raw" />
+    </Property>
+    <Condition Message="The Visual Studio 2010 Tools for Office Runtime is not installed.
+               Please download and install from https://www.microsoft.com/en-us/download/details.aspx?id=56961.">
+      <![CDATA[Installed OR VSTORUNTIMEREDIST>="10.0.30319"]]>
+    </Condition>
+
+    <PropertyRef Id="WIX_IS_NETFRAMEWORK_462_OR_LATER_INSTALLED"/>
+    <Condition Message="This application requires .NET Framework 4.6.2 or later to be installed.">
+      <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_462_OR_LATER_INSTALLED]]>
+    </Condition>
+
+    <Media Id="1" Cabinet="ExcelL2T.cab" EmbedCab="yes"/>
+    
+		<Feature Id="ProductFeature" Title="Excel L2T" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+      <ComponentRef Id="regkey_friendlyname_component" />
+      <ComponentRef Id="regkey_description_component" />
+      <ComponentRef Id="regkey_manifest_component" />
+      <ComponentRef Id="regkey_loadbehavior_component" />
+		</Feature>
+
+    <UIRef Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="ExcelL2T" />
+        <Component Id="regkey_friendlyname_component">
+          <RegistryValue Id="regkey_friendlyname" Root="HKCU" Key="Software\Microsoft\Office\Excel\AddIns\ExcelL2T" Name="FriendlyName" Value="Excel L2T" Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="regkey_description_component">
+          <RegistryValue Id="regkey_description" Root="HKCU" Key="Software\Microsoft\Office\Excel\AddIns\ExcelL2T" Name="Description" Value="Excel L2T is a simple addin that allows you to load files directly into a text formatted worksheet." Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="regkey_manifest_component">
+          <RegistryValue Id="regkey_manifest" Root="HKCU" Key="Software\Microsoft\Office\Excel\AddIns\ExcelL2T" Name="Manifest" Value="[INSTALLFOLDER]excel-l2t.vsto|vstolocal" Type="string" KeyPath="yes" />
+        </Component>
+        <Component Id="regkey_loadbehavior_component">
+          <RegistryValue Id="regkey_loadbehavior" Root="HKCU" Key="Software\Microsoft\Office\Excel\AddIns\ExcelL2T" Name="LoadBehavior" Value="3" Type="integer" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="excel_l2t_vsto_component">
+        <File Id="excel_l2t_vsto" KeyPath="yes"
+              Name="excel-l2t.vsto" Source="$(var.AddinFiles)"></File>
+      </Component>
+      <Component Id="excel_l2t_dll_manifest_component">
+        <File Id="excel_l2t_dll_manifest" KeyPath="yes"
+              Name="excel-l2t.dll.manifest" Source="$(var.AddinFiles)"></File>
+      </Component>
+      <Component Id="excel_l2t_dll_component" >
+        <File Id="excel_l2t_dll" KeyPath="yes"
+              Name="excel-l2t.dll" Source="$(var.AddinFiles)" />
+      </Component>
+      <Component Id="MSOfficeToolsCommon_dll_component">
+        <File Id="MSOfficeToolsCommon_dll" KeyPath="yes"
+              Name="Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
+              Source="$(var.AddinFiles)"></File>
+      </Component>
+      <Component Id="MSOfficeToolsExcel_dll_component">
+        <File Id="MSOfficeToolsExcel_dll" KeyPath="yes"
+              Name="Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
+              Source="$(var.AddinFiles)"></File>
+      </Component>
+    </ComponentGroup>
+	</Fragment>
+</Wix>
